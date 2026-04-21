@@ -1,3 +1,10 @@
+app_name = "fitness_wellness"
+app_title = "Fitness Wellness"
+app_publisher = "Your Organization"
+app_description = "Fitness and Wellness Management System for ERPNext v15+"
+app_email = "admin@example.com"
+app_license = "mit"
+
 scheduler_events = {
 	"daily": [
 		"fitness_wellness.tasks.send_membership_expiry_reminders",
