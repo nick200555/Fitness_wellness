@@ -1,1 +1,2 @@
-frappe
+# No pip dependencies required.
+# frappe is provided by the bench environment and must NOT be listed here.
