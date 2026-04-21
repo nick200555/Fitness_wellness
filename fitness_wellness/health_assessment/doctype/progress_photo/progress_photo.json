@@ -1,0 +1,30 @@
+{
+ "name": "Progress Photo",
+ "doctype": "DocType",
+ "module": "health_assessment",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "photo_date",
+   "fieldtype": "Date",
+   "label": "Photo Date"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ]
+}

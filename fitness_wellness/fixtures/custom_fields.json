@@ -1,0 +1,67 @@
+[
+ {
+  "dt": "Customer",
+  "fieldname": "is_fitness_member",
+  "fieldtype": "Check",
+  "label": "Is Fitness Member"
+ },
+ {
+  "dt": "Customer",
+  "fieldname": "member_profile",
+  "fieldtype": "Link",
+  "label": "Member Profile",
+  "options": "Member"
+ },
+ {
+  "dt": "Customer",
+  "fieldname": "membership_status",
+  "fieldtype": "Data",
+  "label": "Membership Status"
+ },
+ {
+  "dt": "Employee",
+  "fieldname": "trainer_profile",
+  "fieldtype": "Link",
+  "label": "Trainer Profile",
+  "options": "Trainer Profile"
+ },
+ {
+  "dt": "Employee",
+  "fieldname": "trainer_specialization",
+  "fieldtype": "Data",
+  "label": "Trainer Specialization"
+ },
+ {
+  "dt": "Item",
+  "fieldname": "is_fitness_service",
+  "fieldtype": "Check",
+  "label": "Is Fitness Service"
+ },
+ {
+  "dt": "Item",
+  "fieldname": "item_category_fitness",
+  "fieldtype": "Select",
+  "label": "Item Category Fitness",
+  "options": "Class\nPT\nDay Pass\nMerchandise\nCafe"
+ },
+ {
+  "dt": "Sales Invoice",
+  "fieldname": "membership_period",
+  "fieldtype": "Data",
+  "label": "Membership Period"
+ },
+ {
+  "dt": "Sales Invoice",
+  "fieldname": "member_subscription",
+  "fieldtype": "Link",
+  "label": "Member Subscription",
+  "options": "Member Subscription"
+ },
+ {
+  "dt": "Asset",
+  "fieldname": "equipment_register",
+  "fieldtype": "Link",
+  "label": "Equipment Register",
+  "options": "Equipment Register"
+ }
+]

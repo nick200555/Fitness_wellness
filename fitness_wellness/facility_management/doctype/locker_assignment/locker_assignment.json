@@ -1,0 +1,52 @@
+{
+ "name": "Locker Assignment",
+ "doctype": "DocType",
+ "module": "facility_management",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "locker",
+   "fieldtype": "Link",
+   "label": "Locker",
+   "options": "Locker Master"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "assigned_from",
+   "fieldtype": "Date",
+   "label": "Assigned From"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Date",
+   "label": "Assigned To"
+  },
+  {
+   "fieldname": "monthly_charge",
+   "fieldtype": "Currency",
+   "label": "Monthly Charge"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired\nVacated"
+  },
+  {
+   "fieldname": "key_issued",
+   "fieldtype": "Check",
+   "label": "Key Issued"
+  },
+  {
+   "fieldname": "deposit_paid",
+   "fieldtype": "Currency",
+   "label": "Deposit Paid"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "name": "Health Profile",
+ "doctype": "DocType",
+ "module": "health_assessment",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "label": "Assessment Date"
+  },
+  {
+   "fieldname": "height_cm",
+   "fieldtype": "Float",
+   "label": "Height Cm"
+  },
+  {
+   "fieldname": "initial_weight_kg",
+   "fieldtype": "Float",
+   "label": "Initial Weight Kg"
+  },
+  {
+   "fieldname": "initial_bmi",
+   "fieldtype": "Float",
+   "label": "Initial BMI"
+  },
+  {
+   "fieldname": "primary_goal",
+   "fieldtype": "Select",
+   "label": "Primary Goal",
+   "options": "Weight Loss\nMuscle Gain\nEndurance\nFlexibility\nGeneral Wellness\nRehab"
+  },
+  {
+   "fieldname": "activity_level",
+   "fieldtype": "Select",
+   "label": "Activity Level",
+   "options": "Sedentary\nLightly Active\nModerately Active\nVery Active"
+  },
+  {
+   "fieldname": "dietary_preference",
+   "fieldtype": "Select",
+   "label": "Dietary Preference",
+   "options": "Vegetarian\nVegan\nNon-Vegetarian\nKeto\nOther"
+  },
+  {
+   "fieldname": "existing_injuries",
+   "fieldtype": "Long Text",
+   "label": "Existing Injuries"
+  },
+  {
+   "fieldname": "doctor_clearance",
+   "fieldtype": "Check",
+   "label": "Doctor Clearance"
+  },
+  {
+   "fieldname": "doctor_clearance_doc",
+   "fieldtype": "Attach",
+   "label": "Doctor Clearance Doc"
+  },
+  {
+   "fieldname": "par_q_completed",
+   "fieldtype": "Check",
+   "label": "PAR-Q Completed"
+  }
+ ]
+}

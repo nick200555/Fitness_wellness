@@ -1,0 +1,86 @@
+{
+ "name": "Body Metric Log",
+ "doctype": "DocType",
+ "module": "health_assessment",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "log_date",
+   "fieldtype": "Date",
+   "label": "Log Date"
+  },
+  {
+   "fieldname": "weight_kg",
+   "fieldtype": "Float",
+   "label": "Weight Kg"
+  },
+  {
+   "fieldname": "bmi",
+   "fieldtype": "Float",
+   "label": "BMI"
+  },
+  {
+   "fieldname": "body_fat_percentage",
+   "fieldtype": "Float",
+   "label": "Body Fat Percentage"
+  },
+  {
+   "fieldname": "muscle_mass_kg",
+   "fieldtype": "Float",
+   "label": "Muscle Mass Kg"
+  },
+  {
+   "fieldname": "waist_cm",
+   "fieldtype": "Float",
+   "label": "Waist Cm"
+  },
+  {
+   "fieldname": "hip_cm",
+   "fieldtype": "Float",
+   "label": "Hip Cm"
+  },
+  {
+   "fieldname": "chest_cm",
+   "fieldtype": "Float",
+   "label": "Chest Cm"
+  },
+  {
+   "fieldname": "arm_cm",
+   "fieldtype": "Float",
+   "label": "Arm Cm"
+  },
+  {
+   "fieldname": "thigh_cm",
+   "fieldtype": "Float",
+   "label": "Thigh Cm"
+  },
+  {
+   "fieldname": "resting_heart_rate",
+   "fieldtype": "Int",
+   "label": "Resting Heart Rate"
+  },
+  {
+   "fieldname": "blood_pressure",
+   "fieldtype": "Data",
+   "label": "Blood Pressure"
+  },
+  {
+   "fieldname": "measured_by",
+   "fieldtype": "Link",
+   "label": "Measured By",
+   "options": "Trainer Profile"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ]
+}

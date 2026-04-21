@@ -1,0 +1,52 @@
+{
+ "name": "Class Attendance",
+ "doctype": "DocType",
+ "module": "class_management",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "class_schedule",
+   "fieldtype": "Link",
+   "label": "Class Schedule",
+   "options": "Class Schedule"
+  },
+  {
+   "fieldname": "session_date",
+   "fieldtype": "Date",
+   "label": "Session Date"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Trainer Profile"
+  },
+  {
+   "fieldname": "total_enrolled",
+   "fieldtype": "Int",
+   "label": "Total Enrolled"
+  },
+  {
+   "fieldname": "total_attended",
+   "fieldtype": "Int",
+   "label": "Total Attended"
+  },
+  {
+   "fieldname": "attendance_details",
+   "fieldtype": "Table",
+   "label": "Attendance Details",
+   "options": "Attendance Row"
+  },
+  {
+   "fieldname": "trainer_notes",
+   "fieldtype": "Text",
+   "label": "Trainer Notes"
+  },
+  {
+   "fieldname": "session_rating_avg",
+   "fieldtype": "Float",
+   "label": "Session Rating Avg"
+  }
+ ]
+}

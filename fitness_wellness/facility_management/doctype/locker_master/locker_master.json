@@ -1,0 +1,47 @@
+{
+ "name": "Locker Master",
+ "doctype": "DocType",
+ "module": "facility_management",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "locker_number",
+   "fieldtype": "Data",
+   "label": "Locker Number"
+  },
+  {
+   "fieldname": "locker_zone",
+   "fieldtype": "Data",
+   "label": "Locker Zone"
+  },
+  {
+   "fieldname": "locker_size",
+   "fieldtype": "Select",
+   "label": "Locker Size",
+   "options": "Small\nMedium\nLarge"
+  },
+  {
+   "fieldname": "monthly_charge",
+   "fieldtype": "Currency",
+   "label": "Monthly Charge"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nOccupied\nMaintenance"
+  },
+  {
+   "fieldname": "assigned_member",
+   "fieldtype": "Link",
+   "label": "Assigned Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "assignment_date",
+   "fieldtype": "Date",
+   "label": "Assignment Date"
+  }
+ ]
+}

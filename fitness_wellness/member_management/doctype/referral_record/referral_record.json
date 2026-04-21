@@ -1,0 +1,48 @@
+{
+ "name": "Referral Record",
+ "doctype": "DocType",
+ "module": "member_management",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "referrer",
+   "fieldtype": "Link",
+   "label": "Referrer",
+   "options": "Member"
+  },
+  {
+   "fieldname": "referred_member",
+   "fieldtype": "Link",
+   "label": "Referred Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "referral_date",
+   "fieldtype": "Date",
+   "label": "Referral Date"
+  },
+  {
+   "fieldname": "reward_type",
+   "fieldtype": "Select",
+   "label": "Reward Type",
+   "options": "Discount\nFree Month\nCash Credit\nGift"
+  },
+  {
+   "fieldname": "reward_value",
+   "fieldtype": "Currency",
+   "label": "Reward Value"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nQualified\nRewarded"
+  },
+  {
+   "fieldname": "reward_applied_on",
+   "fieldtype": "Date",
+   "label": "Reward Applied On"
+  }
+ ]
+}

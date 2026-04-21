@@ -1,0 +1,91 @@
+{
+ "name": "Diet Plan",
+ "doctype": "DocType",
+ "module": "nutrition",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DIET-.YYYY.-.####"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "dietitian",
+   "fieldtype": "Link",
+   "label": "Dietitian",
+   "options": "Trainer Profile"
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "goal",
+   "fieldtype": "Link",
+   "label": "Goal",
+   "options": "Fitness Goal"
+  },
+  {
+   "fieldname": "daily_calorie_target",
+   "fieldtype": "Float",
+   "label": "Daily Calorie Target"
+  },
+  {
+   "fieldname": "protein_target_g",
+   "fieldtype": "Float",
+   "label": "Protein Target G"
+  },
+  {
+   "fieldname": "carbs_target_g",
+   "fieldtype": "Float",
+   "label": "Carbs Target G"
+  },
+  {
+   "fieldname": "fat_target_g",
+   "fieldtype": "Float",
+   "label": "Fat Target G"
+  },
+  {
+   "fieldname": "water_intake_litres",
+   "fieldtype": "Float",
+   "label": "Water Intake Litres"
+  },
+  {
+   "fieldname": "meal_schedule",
+   "fieldtype": "Table",
+   "label": "Meal Schedule",
+   "options": "Diet Day"
+  },
+  {
+   "fieldname": "special_notes",
+   "fieldtype": "Text",
+   "label": "Special Notes"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nCompleted\nRevised"
+  }
+ ],
+ "autoname": "naming_series:"
+}

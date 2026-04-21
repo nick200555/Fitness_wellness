@@ -1,0 +1,46 @@
+{
+ "name": "Nutrition Goal",
+ "doctype": "DocType",
+ "module": "nutrition",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "goal_type",
+   "fieldtype": "Select",
+   "label": "Goal Type",
+   "options": "Caloric Deficit\nCaloric Surplus\nMacro Balance\nHydration"
+  },
+  {
+   "fieldname": "daily_calorie_goal",
+   "fieldtype": "Float",
+   "label": "Daily Calorie Goal"
+  },
+  {
+   "fieldname": "protein_goal_g",
+   "fieldtype": "Float",
+   "label": "Protein Goal G"
+  },
+  {
+   "fieldname": "tracking_start",
+   "fieldtype": "Date",
+   "label": "Tracking Start"
+  },
+  {
+   "fieldname": "current_avg_calories",
+   "fieldtype": "Float",
+   "label": "Current Avg Calories"
+  },
+  {
+   "fieldname": "compliance_pct",
+   "fieldtype": "Float",
+   "label": "Compliance Pct"
+  }
+ ]
+}

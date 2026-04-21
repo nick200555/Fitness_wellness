@@ -1,0 +1,30 @@
+[
+ {
+  "name": "Fitness Manager",
+  "doctype": "Role"
+ },
+ {
+  "name": "Front Desk Executive",
+  "doctype": "Role"
+ },
+ {
+  "name": "Trainer",
+  "doctype": "Role"
+ },
+ {
+  "name": "Dietitian",
+  "doctype": "Role"
+ },
+ {
+  "name": "Member",
+  "doctype": "Role"
+ },
+ {
+  "name": "Accounts Executive",
+  "doctype": "Role"
+ },
+ {
+  "name": "Facility Supervisor",
+  "doctype": "Role"
+ }
+]

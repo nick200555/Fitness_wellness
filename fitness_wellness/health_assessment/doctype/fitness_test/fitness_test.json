@@ -1,0 +1,83 @@
+{
+ "name": "Fitness Test",
+ "doctype": "DocType",
+ "module": "health_assessment",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Trainer Profile"
+  },
+  {
+   "fieldname": "test_type",
+   "fieldtype": "Select",
+   "label": "Test Type",
+   "options": "Initial\n3-Month\n6-Month\nAnnual\nPre-Event"
+  },
+  {
+   "fieldname": "push_ups_count",
+   "fieldtype": "Int",
+   "label": "Push Ups Count"
+  },
+  {
+   "fieldname": "pull_ups_count",
+   "fieldtype": "Int",
+   "label": "Pull Ups Count"
+  },
+  {
+   "fieldname": "plank_seconds",
+   "fieldtype": "Int",
+   "label": "Plank Seconds"
+  },
+  {
+   "fieldname": "flexibility_cm",
+   "fieldtype": "Float",
+   "label": "Flexibility Cm"
+  },
+  {
+   "fieldname": "vo2_max_estimate",
+   "fieldtype": "Float",
+   "label": "VO2 Max Estimate"
+  },
+  {
+   "fieldname": "1rm_bench_kg",
+   "fieldtype": "Float",
+   "label": "1RM Bench Kg"
+  },
+  {
+   "fieldname": "1rm_squat_kg",
+   "fieldtype": "Float",
+   "label": "1RM Squat Kg"
+  },
+  {
+   "fieldname": "5km_run_minutes",
+   "fieldtype": "Float",
+   "label": "5km Run Minutes"
+  },
+  {
+   "fieldname": "overall_fitness_score",
+   "fieldtype": "Float",
+   "label": "Overall Fitness Score"
+  },
+  {
+   "fieldname": "fitness_level",
+   "fieldtype": "Select",
+   "label": "Fitness Level",
+   "options": "Poor\nBelow Average\nAverage\nGood\nExcellent"
+  }
+ ]
+}

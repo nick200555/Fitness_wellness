@@ -1,0 +1,69 @@
+{
+ "name": "Maintenance Log",
+ "doctype": "DocType",
+ "module": "facility_management",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MLOG-.YYYY.-.####"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Link",
+   "label": "Equipment",
+   "options": "Equipment Register"
+  },
+  {
+   "fieldname": "maintenance_date",
+   "fieldtype": "Date",
+   "label": "Maintenance Date"
+  },
+  {
+   "fieldname": "maintenance_type",
+   "fieldtype": "Select",
+   "label": "Maintenance Type",
+   "options": "Preventive\nCorrective\nBreakdown"
+  },
+  {
+   "fieldname": "work_done",
+   "fieldtype": "Long Text",
+   "label": "Work Done"
+  },
+  {
+   "fieldname": "parts_replaced",
+   "fieldtype": "Long Text",
+   "label": "Parts Replaced"
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Data",
+   "label": "Technician"
+  },
+  {
+   "fieldname": "downtime_hours",
+   "fieldtype": "Float",
+   "label": "Downtime Hours"
+  },
+  {
+   "fieldname": "next_service_date",
+   "fieldtype": "Date",
+   "label": "Next Service Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Completed\nPartial\nPending Follow-Up"
+  }
+ ],
+ "autoname": "naming_series:"
+}

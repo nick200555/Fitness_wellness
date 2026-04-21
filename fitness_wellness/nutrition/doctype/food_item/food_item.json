@@ -1,0 +1,70 @@
+{
+ "name": "Food Item",
+ "doctype": "DocType",
+ "module": "nutrition",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "food_name",
+   "fieldtype": "Data",
+   "label": "Food Name"
+  },
+  {
+   "fieldname": "food_group",
+   "fieldtype": "Select",
+   "label": "Food Group",
+   "options": "Grains\nProtein\nDairy\nFruits\nVegetables\nFats\nBeverages"
+  },
+  {
+   "fieldname": "serving_size_g",
+   "fieldtype": "Float",
+   "label": "Serving Size G"
+  },
+  {
+   "fieldname": "calories_per_serving",
+   "fieldtype": "Float",
+   "label": "Calories Per Serving"
+  },
+  {
+   "fieldname": "protein_g",
+   "fieldtype": "Float",
+   "label": "Protein G"
+  },
+  {
+   "fieldname": "carbs_g",
+   "fieldtype": "Float",
+   "label": "Carbs G"
+  },
+  {
+   "fieldname": "fat_g",
+   "fieldtype": "Float",
+   "label": "Fat G"
+  },
+  {
+   "fieldname": "fibre_g",
+   "fieldtype": "Float",
+   "label": "Fibre G"
+  },
+  {
+   "fieldname": "sodium_mg",
+   "fieldtype": "Float",
+   "label": "Sodium Mg"
+  },
+  {
+   "fieldname": "is_veg",
+   "fieldtype": "Check",
+   "label": "Is Veg"
+  },
+  {
+   "fieldname": "is_vegan",
+   "fieldtype": "Check",
+   "label": "Is Vegan"
+  },
+  {
+   "fieldname": "is_gluten_free",
+   "fieldtype": "Check",
+   "label": "Is Gluten Free"
+  }
+ ]
+}

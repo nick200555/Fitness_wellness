@@ -1,0 +1,57 @@
+{
+ "name": "AMC Contract",
+ "doctype": "DocType",
+ "module": "facility_management",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "contract_number",
+   "fieldtype": "Data",
+   "label": "Contract Number"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "annual_value",
+   "fieldtype": "Currency",
+   "label": "Annual Value"
+  },
+  {
+   "fieldname": "covered_equipment",
+   "fieldtype": "Table",
+   "label": "Covered Equipment",
+   "options": "Equipment Row"
+  },
+  {
+   "fieldname": "service_visits_per_year",
+   "fieldtype": "Int",
+   "label": "Service Visits Per Year"
+  },
+  {
+   "fieldname": "response_time_hours",
+   "fieldtype": "Int",
+   "label": "Response Time Hours"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "name": "Member Attendance",
+ "doctype": "DocType",
+ "module": "member_management",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "check_in_time",
+   "fieldtype": "Time",
+   "label": "Check In Time"
+  },
+  {
+   "fieldname": "check_out_time",
+   "fieldtype": "Time",
+   "label": "Check Out Time"
+  },
+  {
+   "fieldname": "duration_minutes",
+   "fieldtype": "Int",
+   "label": "Duration Minutes"
+  },
+  {
+   "fieldname": "access_point",
+   "fieldtype": "Data",
+   "label": "Access Point"
+  },
+  {
+   "fieldname": "attendance_type",
+   "fieldtype": "Select",
+   "label": "Attendance Type",
+   "options": "Gym\nClass\nPool\nSpa"
+  },
+  {
+   "fieldname": "subscription",
+   "fieldtype": "Link",
+   "label": "Subscription",
+   "options": "Member Subscription"
+  }
+ ]
+}

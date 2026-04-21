@@ -1,0 +1,77 @@
+{
+ "name": "Daily Cash Reconciliation",
+ "doctype": "DocType",
+ "module": "billing",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "reconciliation_date",
+   "fieldtype": "Date",
+   "label": "Reconciliation Date"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "Morning\nEvening\nFull Day"
+  },
+  {
+   "fieldname": "opening_cash",
+   "fieldtype": "Currency",
+   "label": "Opening Cash"
+  },
+  {
+   "fieldname": "cash_collected",
+   "fieldtype": "Currency",
+   "label": "Cash Collected"
+  },
+  {
+   "fieldname": "card_upi_total",
+   "fieldtype": "Currency",
+   "label": "Card UPI Total"
+  },
+  {
+   "fieldname": "total_receipts",
+   "fieldtype": "Currency",
+   "label": "Total Receipts"
+  },
+  {
+   "fieldname": "expenses_paid",
+   "fieldtype": "Currency",
+   "label": "Expenses Paid"
+  },
+  {
+   "fieldname": "closing_cash_physical",
+   "fieldtype": "Currency",
+   "label": "Closing Cash Physical"
+  },
+  {
+   "fieldname": "expected_closing_cash",
+   "fieldtype": "Currency",
+   "label": "Expected Closing Cash"
+  },
+  {
+   "fieldname": "difference",
+   "fieldtype": "Currency",
+   "label": "Difference"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "reconciled_by",
+   "fieldtype": "Link",
+   "label": "Reconciled By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  }
+ ]
+}

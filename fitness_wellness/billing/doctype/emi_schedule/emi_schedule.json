@@ -1,0 +1,59 @@
+{
+ "name": "EMI Schedule",
+ "doctype": "DocType",
+ "module": "billing",
+ "is_submittable": 0,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "subscription",
+   "fieldtype": "Link",
+   "label": "Subscription",
+   "options": "Member Subscription"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "no_of_instalments",
+   "fieldtype": "Int",
+   "label": "No of Instalments"
+  },
+  {
+   "fieldname": "instalment_amount",
+   "fieldtype": "Currency",
+   "label": "Instalment Amount"
+  },
+  {
+   "fieldname": "instalments",
+   "fieldtype": "Table",
+   "label": "Instalments",
+   "options": "EMI Instalment"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "Card Auto-Debit\nUPI Mandate\nManual"
+  },
+  {
+   "fieldname": "mandate_reference",
+   "fieldtype": "Data",
+   "label": "Mandate Reference"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nCompleted\nDefaulted"
+  }
+ ]
+}

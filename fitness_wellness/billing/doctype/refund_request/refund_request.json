@@ -1,0 +1,78 @@
+{
+ "name": "Refund Request",
+ "doctype": "DocType",
+ "module": "billing",
+ "is_submittable": 1,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "REF-.YYYY.MM.-.####"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Link",
+   "label": "Invoice",
+   "options": "Membership Invoice"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "refund_reason",
+   "fieldtype": "Select",
+   "label": "Refund Reason",
+   "options": "Medical\nRelocation\nDissatisfaction\nDuplicate Payment\nOther"
+  },
+  {
+   "fieldname": "requested_amount",
+   "fieldtype": "Currency",
+   "label": "Requested Amount"
+  },
+  {
+   "fieldname": "approved_amount",
+   "fieldtype": "Currency",
+   "label": "Approved Amount"
+  },
+  {
+   "fieldname": "deductions_detail",
+   "fieldtype": "Text",
+   "label": "Deductions Detail"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "refund_mode",
+   "fieldtype": "Select",
+   "label": "Refund Mode",
+   "options": "Original Payment Mode\nBank Transfer\nWallet Credit"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved\nProcessed\nRejected"
+  },
+  {
+   "fieldname": "credit_note",
+   "fieldtype": "Link",
+   "label": "Credit Note",
+   "options": "Credit Note"
+  }
+ ],
+ "autoname": "naming_series:"
+}
