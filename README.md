@@ -2,7 +2,7 @@
 
 > **Version:** 1.0 | **Year:** 2026 | **Framework:** Frappe v15+ / ERPNext v15+
 
-A comprehensive custom Frappe application that manages the complete fitness business value chain — from member onboarding and subscription management through class scheduling, trainer management, equipment maintenance, health assessments, nutrition planning, and billing — natively integrating with ERPNext's Accounts, HR, Stock, and CRM modules.
+A comprehensive custom Frappe application that covers the complete fitness business value chain — from member onboarding and subscription management through class scheduling, trainer management, equipment maintenance, health assessments, nutrition planning, and billing — natively integrating with ERPNext's Accounts, HR, Stock, and CRM modules.
 
 ---
 
@@ -51,14 +51,13 @@ Trainer profiles, certifications, availability slots, member assignments, commis
 - **Trainer Commission** — Auto-calculated with TDS deduction; creates Journal Entry
 
 ### 🏢 Module 4 — Facility & Equipment Management
-Equipment register, maintenance schedules, AMC contracts, locker management. Linked to ERPNext Fixed Assets.
+Equipment register, maintenance schedules, AMC contracts, and locker management. Linked to ERPNext Fixed Assets.
 
 - **Equipment Register** — Full asset lifecycle with warranty and AMC linkage
 - **Maintenance Schedule** — Preventive/corrective schedule with vendor assignment
 - **Maintenance Log** — Breakdown records with cost and downtime tracking
 - **AMC Contract** — Annual Maintenance Contracts covering multiple equipment
 - **Locker Master** — Locker inventory with size, zone, and rental charge
-- **Locker Assignment** — Member locker allocation history
 
 ### 🩺 Module 5 — Health & Fitness Assessment
 Body metrics, fitness tests, goal tracking, and progress photos. Linked to trainer assignments and diet plans.
@@ -111,13 +110,13 @@ All reports are Frappe Script Reports. Dashboards use ERPNext Number Cards & Cha
 ```
 fitness_wellness/                  ← Frappe app root
 ├── setup.py
-├── requirements.txt
+├── requirements.txt               ← Third-party dependencies only
 ├── pyproject.toml
 ├── MANIFEST.in
 ├── package.json
 └── fitness_wellness/              ← Python package
     ├── __init__.py
-    ├── hooks.py                   ← Scheduler events, doc events, roles, app_include_js
+    ├── hooks.py                   ← Scheduler events, doc events, roles
     ├── patches.txt
     ├── tasks.py                   ← Scheduled tasks (Daily / Weekly / Monthly)
     │
@@ -167,8 +166,7 @@ fitness_wellness/                  ← Frappe app root
     │       ├── maintenance_schedule/
     │       ├── maintenance_log/
     │       ├── amc_contract/
-    │       ├── locker_master/
-    │       └── locker_assignment/
+    │       └── locker_master/
     │
     ├── health_assessment/
     │   └── doctype/
@@ -211,6 +209,29 @@ fitness_wellness/                  ← Frappe app root
 
 ---
 
+## 🚀 Installation
+
+```bash
+# Step 1: Get the app (skip assets to avoid build timing issue)
+bench get-app --skip-assets https://github.com/nick200555/fitness_wellness.git
+
+# Step 2: Install to your ERPNext site
+bench --site YOUR_SITE_NAME install-app fitness_wellness
+
+# Step 3: Build assets (apps.txt is now populated)
+bench build --app fitness_wellness
+
+# Step 4: Run migrations
+bench --site YOUR_SITE_NAME migrate
+
+# Step 5: Restart
+bench restart
+```
+
+> **Note:** Always use `--skip-assets` with `bench get-app` for this app. Build separately after site install.
+
+---
+
 ## 🏷️ DocType Naming Series
 
 | DocType | Series | Example |
@@ -239,30 +260,6 @@ fitness_wellness/                  ← Frappe app root
 | **HR & Payroll** | Trainers as Employees; Shift Management; Commission as salary component |
 | **Fixed Assets** | Equipment → Fixed Asset; depreciation per category; maintenance cost expensed |
 | **Quality** | Pool water quality as Quality Inspections; FSSAI compliance for café/supplements |
-
----
-
-## 🚀 Installation
-
-```bash
-# 1. Get the app into your bench
-bench get-app fitness_wellness https://github.com/nick200555/fitness_wellness.git
-
-# 2. Install on your ERPNext site
-bench --site your-site.local install-app fitness_wellness
-
-# 3. Run database migrations
-bench --site your-site.local migrate
-
-# 4. Restart bench services
-bench restart
-
-# 5. Clear cache
-bench --site your-site.local clear-cache
-
-# 6. (Optional) Load demo fixtures
-bench --site your-site.local execute fitness_wellness.setup.load_demo_data
-```
 
 ---
 

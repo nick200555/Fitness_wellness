@@ -1,2 +1,2 @@
 # Third-party Python dependencies for fitness_wellness
-# DO NOT add frappe or erpnext here — they are installed by the bench
+# DO NOT add frappe or erpnext here — they are managed by the bench environment
