@@ -1,3 +1,2 @@
-# Core Frappe/ERPNext dependency — must match your bench version
-frappe>=15.0.0,<16.0.0
-erpnext>=15.0.0,<16.0.0
+# Third-party Python dependencies for fitness_wellness
+# DO NOT add frappe or erpnext here — they are installed by the bench
